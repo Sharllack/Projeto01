@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Cadastre-se
+        </h1>
+    </header>
+    <form class="forma" id="form">
+        <main>
+                <div>
+                    <label for="name">Nome Completo: </label><br>
+                    <input type="text" id="name" placeholder="Digite o seu nome" minlength="15" maxlength="80" required>
+                </div>
+                <div>
+                    <label for="date">Data de Nascimento: </label><br>
+                    <input type="date" id="date" required>
+                </div>
+                <div>
+                    <label for="sexo">Sexo: </label><br>
+                    <input type="radio" name="null" id="M" checked>Masculino
+                    <input type="radio" name="null" id="F">Feminino
+                </div>
+                <div>
+                    <label for="mae">Nome da mãe: </label><br>
+                    <input type="text" id="mae" placeholder="Digite o nome da sua mãe" required>
+                </div>
+                <div>
+                    <label for="cpf">CPF: </label><br>
+                    <input type="text" id="cpf" placeholder="Digite o CPF" maxlength="11" required>
+                </div>
+                <div>
+                    <label for="email">e-mail: </label><br>
+                    <input type="email" name="null" id="email" placeholder="Digite o e-mail" required>
+                </div>
+                <div>
+                    <label for="numcell">Número do Celular: </label><br>
+                    <input type="text" id="numcell" placeholder="(+55)xx-xxxxxxxxx" maxlength="11" required>
+                </div>
+                <div>
+                    <label for="numtel">Número Fixo: </label><br>
+                    <input type="text" id="numtel" placeholder="(+55)xx-xxxxxxxx" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" placeholder="Rua" required>
+                    <label for="num">Número: </label>
+                    <input type="text" id="num" placeholder="Número" required><br>
+                    <label for="bairro">Bairro: </label><br>
+                    <input type="text" id="bairro" placeholder="Bairro" required>
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" id="cidade" placeholder="Cidade" required><br>
+                    <label for="estado">Estado: </label><br>
+                    <input type="text" id="estado" placeholder="Estado" required>
+                    <label for="cep">CEP: </label>
+                    <input type="text" id="cep" placeholder="CEP" maxlength="8" required>
+                </div>
+                <div>
+                    <label for="login">Login: </label><br>
+                    <input type="text" id="login" placeholder="Login" maxlength="6" minlength="6" required>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label><br>
+                    <input type="password" id="senha" placeholder="senha" minlength="8" required>
+                </div>
+                <div>
+                    <label for="csenha">Confirme a senha: </label><br>
+                    <input type="password" id="csenha" placeholder="Confirme a senha" minlength="8" required>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+        </main>
+    </form>
+</body>
+</html>

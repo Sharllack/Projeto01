@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('estadio.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-image: url('user.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 300px;
+    min-width: 280;
+    margin: auto;
+    margin-top: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356)
+}
+
+
+div {
+    text-align: center;
+    padding: 30px;
+}
+
+div p > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div p > a:hover {
+    text-decoration: underline;
+}
+
+div p > a:active {
+    text-decoration: underline;
+    color: blue;
+}
