@@ -36,6 +36,14 @@ input#date {
     margin-left: 75px;
 }
 
+input#cidade {
+    margin-left: 22px;
+}
+
+input#cep {
+    margin-left: 40px;
+}
+
 label {
     font-weight: bold;
 }
