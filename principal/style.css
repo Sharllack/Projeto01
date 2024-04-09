@@ -8,29 +8,46 @@
 
 body {
     background-image: url('estadio.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 header {
     text-align: center;
-    background-image: linear-gradient(to right, black 30%, blue , yellow, green);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.411) 30%, rgba(0, 0, 255, 0.411) , rgba(255, 255, 0, 0.411), rgba(0, 128, 0, 0.411));
     padding: 50px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav {
-    background-image: linear-gradient(to right, black 30%, blue , yellow, green);
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.486);
+#topo {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.411) 30%, rgba(0, 0, 255, 0.411) , rgba(255, 255, 0, 0.411), rgba(0, 128, 0, 0.411));
     padding: 10px;
 }
 
-nav a {
+
+
+#topo a {
+    text-decoration: none;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#topo a:hover {
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.cab {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.411) 30%, rgba(0, 0, 255, 0.411) , rgba(255, 255, 0, 0.411), rgba(0, 128, 0, 0.411));
+    padding: 10px;
+}
+
+.cab a {
     text-decoration: none;
     padding: 10px;
     color: white;
@@ -38,15 +55,15 @@ nav a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav a:hover {
+.cab a:hover {
     background-color: blue;
     color: white;
-    border-radius: px;
+    border-radius: 5px;
     transition-duration: 0.5s;
     
 }
 
-nav li {
+.cab li {
     display: inline-block;
 }
 
@@ -55,7 +72,7 @@ nav li {
     color: black;
 }
 
-nav li a:hover {
+.cab li a:hover {
     border-radius: 5px;
 }
 
@@ -73,13 +90,53 @@ nav li a:hover {
     display: block;
 }
 
-div a {
-    border-radius: 0px;
+a.cad {
+    float: right;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.conteudo {
+    display: inline-flex;
+    width: 100%;
+    min-width: 280px;
+    margin: auto;
+}
+
+.prod {
+    margin: 40px;
+    border: solid black 1px;
+    text-align: center;
+    overflow: hidden;
+    background-color: white;
+}
+
+.prod img {
+    transition: 1s all ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.prod h5 {
+    margin-top: 15px;
+}
+
+.prod hr {
+    margin: 20px;
 }
 
 main {
-    background-color: white;
-    width: 900px;
-    height: 500px;
+    background-color: rgba(255, 255, 255, 0.534);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.486);
+    max-width: 1000px;
+    min-width: 280px;
+    height: auto;
     margin: auto;
 }
