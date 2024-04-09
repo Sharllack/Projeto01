@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url('estadio.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 header {
     text-align: center;
     background-image: linear-gradient(to right, black 30%, blue , yellow, green);
@@ -68,4 +75,11 @@ nav li a:hover {
 
 div a {
     border-radius: 0px;
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    height: 500px;
+    margin: auto;
 }
