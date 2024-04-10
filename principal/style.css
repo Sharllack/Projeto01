@@ -106,7 +106,7 @@ a.cad {
 
 .conteudo {
     display: inline-flex;
-    width: 100%;
+    max-width: 1000px;
     min-width: 280px;
     margin: auto;
 }
