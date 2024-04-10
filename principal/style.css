@@ -7,9 +7,10 @@
 }
 
 body {
+    height: 100vh;
     background-image: url('estadio.jpg');
+    background-position: center center;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 
