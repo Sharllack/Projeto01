@@ -121,6 +121,7 @@ a.cad {
 
 .prod img {
     transition: 0.5s all ease-in-out;
+    width: 100%;
 }
 
 img:hover {
