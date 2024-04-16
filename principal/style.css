@@ -10,7 +10,7 @@ body {
     height: 100vh;
     background-color: black;
     background-image: url('estadio.jpg');
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
