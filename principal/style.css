@@ -45,6 +45,14 @@ header {
     transition-duration: 0.5s;
 }
 
+#login {
+    margin-right: 5px;
+}
+
+#cadas {
+    margin-right: 10px;
+}
+
 .cab {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.411) 30%, rgba(0, 0, 255, 0.411) , rgba(255, 255, 0, 0.411), rgba(0, 128, 0, 0.411));
     padding: 10px;

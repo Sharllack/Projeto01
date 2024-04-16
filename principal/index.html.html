@@ -5,25 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>F.A. Brasil</title>
-</head>
-<body>
-    <nav id="topo">
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="Facebook_logo.png" alt="icone facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="instagram_logo.png" alt="icone instagram"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="x_logo.png" alt="icone twitter"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="whats_logo.png" alt="icone whatsapp"> 21 990420932</a>
-            <a href="/cadastro/cadastro.html" target="_self" class="cad">Cadastre-se</a>
-            <a href="/login/login.html" class="cad">Login</a>
+    <style>
+        ul {
+            list-style-type: none;
+        }
 
-    </nav>
+        #logos {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.219);
+        }
+
+        #logos li {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        #logos a {
+            text-decoration: none;
+            font-size: 1em;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.699);
+        }
+
+        #fim {
+            margin-right: 850px;
+        }
+
+        #burguer {
+            background-color: rgb(53, 53, 53);
+            color: white;
+            display: block;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer; /* Para mudar o cursor */
+        }
+
+            #burguer:hover {
+            background-color: rgb(138, 137, 137);
+        }
+
+        @media screen and (min-width: 600px) {
+            #burguer {
+                display: none;
+            }
+
+            #cab {
+            display: block;
+            }
+
+            #cab > ul > li {
+                display: inline-block;
+            }
+
+            #cab > ul > li > a:hover {
+                background-color: rgb(138, 137, 137);
+                transition-duration: .5s;
+            }
+
+            main {
+                width: 900px;
+            }
+        }
+        
+    </style>
+</head>
+<body onresize="mudouTamanho()">
+    <menu id="logos">
+        <ul>
+            <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="Facebook_logo.png" alt="icone facebook"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="instagram_logo.png" alt="icone instagram"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="x_logo.png" alt="icone twitter"></a></li>
+            <li id="fim"><a href="https://web.whatsapp.com/" target="_blank"><img src="whats_logo.png" alt="icone whatsapp"> 21990420932</a></li>
+            <li><a href="/login/login.html" class="cad" id="login" >Login <span class="material-symbols-outlined">
+                login
+                </span></a></li>
+            <li><a href="/cadastro/cadastro.html" target="_self" class="cad" id="cadas">Cadastre-se <span class="material-symbols-outlined">
+                input
+                </span></a></li>
+        </ul>
+    </menu>
     <hr>
     <header>
         <h1>
             FUTEBOL AMERICANO BRASIL
         </h1>
     </header>
-    <nav class="cab">
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu class="cab">
         <ul>
             <li class="dropdown">
                 <a href="/principal/index.html">Home</a>
@@ -53,11 +125,11 @@
 
             </li>
         </ul>
-    </nav>
+    </menu>
     <main>
         <div class="conteudo">
 
-                <div class="prod"><a href="#"><img src="eu.png" alt=""></a>
+                <div class="prod"><a href="#"><img src="estadio.jpg" alt=""></a>
                 <h5>Lucas Menezes Alves da Silva</h5><br>
                     <p>Este é um teste de site</p>
                 <hr>
@@ -68,7 +140,7 @@
                 </nav>
                 </div>
 
-                <div class="prod"><a href="#"><img src="eu.png" alt=""></a>
+                <div class="prod"><a href="#"><img src="estadio.jpg" alt=""></a>
                 <h5>Lucas Menezes Alves da Silva</h5><br>
                 <p>Este é um teste de site</p>
                 <hr>
@@ -79,7 +151,7 @@
                 </nav>
                 </div>
 
-                <div class="prod"><a href="#"><img src="eu.png" alt=""></a>
+                <div class="prod"><a href="#"><img src="estadio.jpg" alt=""></a>
                     <h5>Lucas Menezes Alves da Silva</h5><br>
                     <p>Este é um teste de site</p>
                 <hr>
@@ -94,5 +166,21 @@
             
         </div>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 600) {
+                cab.style.display = 'block'
+            } else {
+                cab.style.display = 'none'
+            }
+        }
+        function clickMenu () {
+            if (cab.style.display == 'block') {
+                cab.style.display = 'none'
+            } else {
+                cab.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
