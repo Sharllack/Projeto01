@@ -113,7 +113,6 @@ a.cad {
 }
 
 .conteudo {
-    overflow-x: scroll;
     display: inline-flex;
     max-width: 1000px;
     min-width: 280px;
